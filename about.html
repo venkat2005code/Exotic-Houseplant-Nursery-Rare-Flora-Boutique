@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Exotic Houseplant Nursery & Rare Flora Boutique</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+                Flora
+            </a>
+        </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="home-2.html">Home 2 (Grid)</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                    <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+                    <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Page Header -->
+        <!-- Insert photo here (Update the background URL below) -->
+        <section class="page-header section bg-secondary" style="background: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;">
+            <div class="container">
+                <h1 class="page-title">Our Story</h1>
+                <p class="page-subtitle">A passion for the rare, the weird, and the beautifully mutated.</p>
+            </div>
+        </section>
+
+        <!-- 2. About Story -->
+        <section class="section about-section">
+            <div class="container">
+                <div class="about-layout">
+                    <figure class="about-image" style="margin: 0;">
+                    <!-- Insert photo here -->
+                    <img src="https://plus.unsplash.com/premium_photo-1663091870068-7eadee98c652?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Nursery Founders" style="width: 100%; height: auto; border-radius: 8px;">
+                    
+                </figure>
+                    <div class="about-content">
+                        <h2 class="section-title" style="text-align: start; margin-bottom: 1.5rem;">Cultivating Rarity
+                        </h2>
+                        <p>Founded in 2018, the Rare Flora Boutique began as a small, specialized greenhouse dedicated
+                            to the preservation and cultivation of highly variegated and mutated aroids. What started as
+                            a personal collection rapidly grew into a premier destination for serious plant collectors
+                            worldwide.</p>
+                        <p>Our mission is not just to sell plants, but to educate. We believe that caring for exotic
+                            specimens requires a deep understanding of their natural habitats. Our team of expert
+                            botanists works tirelessly to provide you with the most robust plant care profiles and
+                            diagnostics.</p>
+                        <p>Every specimen that leaves our nursery is thoroughly inspected, properly acclimated, and
+                            guaranteed to arrive in pristine condition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Values -->
+        <section class="section values-section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Our Values</h2>
+                <div class="care-grid">
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+                        <h3>Sustainability</h3>
+                        <p>We source ethically and propagate heavily in-house to reduce pressure on wild populations.
+                        </p>
+                    </div>
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg></div>
+                        <h3>Scientific Rigor</h3>
+                        <p>Our tissue culture and pest management programs are driven by the latest botanical research.
+                        </p>
+                    </div>
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3-6 6"/><path d="m14 10-10 10a2 2 0 0 0 2.83 2.83L17 13"/></svg></div>
+                        <h3>Community</h3>
+                        <p>We foster a community of dedicated collectors through transparent education and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Meet the Botanists -->
+        <section class="section team-section">
+            <div class="container">
+                <h2 class="section-title">Meet the Botanists</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Dr. Evelyn Reyes">
+                        <h3>Dr. Evelyn Reyes</h3>
+                        <p>Lead Tissue Culture Specialist</p>
+                    </div>
+                    <div class="team-member">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Marcus Vance">
+                        <h3>Marcus Vance</h3>
+                        <p>Head of Exotic Acquisitions</p>
+                    </div>
+                    <div class="team-member">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Chloe Lin">
+                        <h3>Chloe Lin</h3>
+                        <p>Pest Diagnostics Expert</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Facilities -->
+        <section class="section facilities-section bg-secondary">
+            <div class="container about-layout reverse">
+                <figure class="about-image" style="margin: 0;">
+                    <!-- Insert photo here -->
+                    <img src="https://plus.unsplash.com/premium_photo-1754488048042-c5ff27a94519?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGhlJTIwb3JpZ2luYWwlMjA0MDAlMjBzcS1mdCUyMGdyZWVuaG91c2UlMjB3aGVyZSUyMG91ciUyMGNvbGxlY3Rpb24lMjBiZWdhbi58ZW58MHx8MHx8fDA%3D"
+                        alt="Our first greenhouse" style="width: 100%; height: auto; border-radius: 8px;">
+                    
+                </figure>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: start; margin-bottom: 1.5rem;">State of the Art
+                        Facilities</h2>
+                    <p>Our 20,000 square foot climate-controlled greenhouse mimics the exact natural environments of our
+                        rarest specimens. With automated misting systems, grow lights calibrated to specific PPFD
+                        metrics, and advanced air filtration, we ensure unparalleled plant health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Sustainability Stats -->
+        <section class="section stats-section">
+            <div class="container">
+                <h2 class="section-title">Sustainability Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <p>Rare Species Preserved</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <p>Successful In-House Propagations</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <p>Peat-Free Organic Substrates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                        Flora
+                    </a>
+                </div>
+                <p class="footer-description">Curators of the world's most architectural and structural exotic plants. Providing white-glove delivery and bespoke botanical styling.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="12" y2="22"/><path d="M12 12A6 6 0 1 0 6 6v3a3 3 0 0 0 6 0"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="home-2.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-group">
+                <h3>Contact</h3>
+                <ul class="footer-contact-info">
+                    <li><a href="mailto:inquiries@rarefloraboutique.com">inquiries@rarefloraboutique.com</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li>123 Botanical Way<br>Greenwich, CT 06830</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Flora Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

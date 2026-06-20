@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Exotic Houseplant Nursery & Rare Flora Boutique</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+                Flora
+            </a>
+        </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="home-2.html">Home 2 (Grid)</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                    <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+                    <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Page Header -->
+        <!-- Insert photo here (Update the background URL below) -->
+        <section class="page-header section bg-secondary" style="background: url('https://images.unsplash.com/photo-1604762524889-3e2fcc145683?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;">
+            <div class="container">
+                <h1 class="page-title">Botanical Services</h1>
+                <p class="page-subtitle">Expertise tailored to the curation and preservation of rare indoor flora.</p>
+            </div>
+        </section>
+
+        <!-- 2. Sourcing -->
+        <section class="section">
+            <div class="container">
+                <div class="service-item" style="margin-bottom: 0;">
+                    <div class="service-content">
+                        <h2>Rare Plant Sourcing</h2>
+                        <p>Looking for a specific mutation or a highly elusive species? Our global network of trusted
+                            growers allows us to source nearly any exotic plant. We handle the import permits,
+                            phytosanitary certificates, and the crucial acclimation process.</p>
+                        <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">Inquire Now</a>
+                    </div>
+                    <figure class="service-image" style="margin: 0;">
+                        <!-- Insert photo here -->
+                        <img src="https://plus.unsplash.com/premium_photo-1675294436201-9fcb07e9c914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8R2xvYmFsJTIwc291cmNpbmclMjBmb3IlMjB0aGUlMjByYXJlc3QlMjBzcGVjaW1lbnMufGVufDB8fDB8fHww=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Plant sourcing" style="width: 100%; height: auto; border-radius: 8px;">
+                        
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Consulting -->
+        <section class="section bg-secondary">
+            <div class="container">
+                <div class="service-item reverse" style="margin-bottom: 0;">
+                    <div class="service-content">
+                        <h2>Interior Botanical Consulting</h2>
+                        <p>Elevate your residential or commercial space with our bespoke plant styling. We assess your
+                            environment's lighting, humidity, and airflow to recommend and install specimens that will
+                            thrive and create a stunning visual impact.</p>
+                        <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">Book Consultation</a>
+                    </div>
+                    <figure class="service-image" style="margin: 0;">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Botanical consulting" style="width: 100%; height: auto; border-radius: 8px;">
+                        
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Delivery -->
+        <section class="section">
+            <div class="container">
+                <div class="service-item" style="margin-bottom: 0;">
+                    <div class="service-content">
+                        <h2>White-Glove Delivery & Installation</h2>
+                        <p>We understand the delicacy of rare plants. For our local tri-state clients, we offer
+                            specialized climate-controlled delivery and professional installation to ensure your new
+                            specimen transitions seamlessly into its new home.</p>
+                        <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">View Delivery Zones</a>
+                    </div>
+                    <figure class="service-image" style="margin: 0;">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1604762524889-3e2fcc145683?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="White glove delivery" style="width: 100%; height: auto; border-radius: 8px;">
+                        
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Pest Diagnostics -->
+        <section class="section bg-secondary">
+            <div class="container">
+                <div class="service-item reverse" style="margin-bottom: 0;">
+                    <div class="service-content">
+                        <h2>Pest Management & Diagnostics</h2>
+                        <p>If your rare specimen is failing, our clinical diagnostics team can identify the pathogen or
+                            pest. We offer organic eradication protocols and quarantine services to bring your plant
+                            back to perfect health.</p>
+                        <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">Request Diagnostic</a>
+                    </div>
+                    <figure class="service-image" style="margin: 0;">
+                        <!-- Insert photo here -->
+                        <img src="https://plus.unsplash.com/premium_photo-1682126104327-ef7d5f260cf7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2xpbmljYWwlMjBwZXN0JTIwbWFuYWdlbWVudCUyMGFuZCUyMGRpYWdub3N0aWNzLnxlbnwwfHwwfHx8MA%3D%3D=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Microscope analyzing leaves" style="width: 100%; height: auto; border-radius: 8px;">
+                        <figcaption style="margin-top: 0.5rem; text-align: center; font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                            Clinical pest management and diagnostics.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Tissue Culture -->
+        <section class="section">
+            <div class="container">
+                <div class="service-item" style="margin-bottom: 0;">
+                    <div class="service-content">
+                        <h2>Tissue Culture & Micropropagation</h2>
+                        <p>For collectors looking to preserve a one-of-a-kind mutation, we offer sterile laboratory
+                            micropropagation. Secure the genetics of your prized aroid safely and sustainably.</p>
+                        <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                    <figure class="service-image" style="margin: 0;">
+                        <!-- Insert photo here -->
+                        <img src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Plant tissue culture in laboratory" style="width: 100%; height: auto; border-radius: 8px;">
+                        <figcaption style="margin-top: 0.5rem; text-align: center; font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                            Sterile laboratory micropropagation.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                        Flora
+                    </a>
+                </div>
+                <p class="footer-description">Curators of the world's most architectural and structural exotic plants. Providing white-glove delivery and bespoke botanical styling.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="12" y2="22"/><path d="M12 12A6 6 0 1 0 6 6v3a3 3 0 0 0 6 0"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="home-2.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-group">
+                <h3>Contact</h3>
+                <ul class="footer-contact-info">
+                    <li><a href="mailto:inquiries@rarefloraboutique.com">inquiries@rarefloraboutique.com</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li>123 Botanical Way<br>Greenwich, CT 06830</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Flora Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

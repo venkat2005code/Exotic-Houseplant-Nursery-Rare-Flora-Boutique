@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Houseplant Nursery & Rare Flora Boutique</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+                Flora
+            </a>
+        </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="home-2.html">Home 2 (Grid)</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <!-- Display only the active mode in the RTL/LTR toggle -->
+            <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                    <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+                    <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+                </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <!-- Insert photo here (Update the background URL below) -->
+        <section class="hero" style="background: url('https://plus.unsplash.com/premium_photo-1754211653782-3d50f91054c0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q3VsdGl2YXRpbmclMjB0aGUlMjBFeHRyYW9yZGluYXJ5fGVufDB8fDB8fHww=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;">
+            <div class="hero-content">
+                <h1>Cultivating the Extraordinary</h1>
+                <p>Discover our highly curated collection of rare mutations, variegations, and exotic indoor flora.</p>
+                <a href="#collection" class="btn primary-btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <!-- 2. Rare Collection Grid -->
+        <section id="collection" class="section mutations-grid-section">
+            <div class="container">
+                <h2 class="section-title">Rare Mutations & Variegations</h2>
+                <div class="grid visual-grid">
+                    <div class="grid-item">
+                        <div class="image-wrapper">
+                            <!-- Insert photo here -->
+                            <img src="https://images.unsplash.com/photo-1623325943583-d658515e0889?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW9uc3RlcmElMjBBbGJvJTIwVmFyaWVnYXRhJTIyfGVufDB8fDB8fHww"
+                                alt="Monstera Albo Variegata">
+                        </div>
+                        <div class="item-info">
+                            <h3>Monstera Albo Variegata</h3>
+                            <p>Stunning white variegation, highly sought after.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-wrapper">
+                            <!-- Insert photo here -->
+                            <img src="https://images.unsplash.com/photo-1728247926626-eaf15230f65e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UGhpbG9kZW5kcm9uJTIwUGluayUyMFByaW5jZXNzfGVufDB8fDB8fHww"
+                                alt="Philodendron Pink Princess">
+                        </div>
+                        <div class="item-info">
+                            <h3>Philodendron Pink Princess</h3>
+                            <p>Deep burgundy leaves with bright pink splashes.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-wrapper">
+                            <!-- Insert photo here -->
+                            <img src="https://images.unsplash.com/photo-1609340942215-4f9bfe38593f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QW50aHVyaXVtJTIwV2Fyb2NxdWVhbnVtfGVufDB8fDB8fHww"
+                                alt="Anthurium Warocqueanum">
+                        </div>
+                        <div class="item-info">
+                            <h3>Anthurium Warocqueanum</h3>
+                            <p>The Queen Anthurium, featuring elongated, velvety leaves.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-wrapper">
+                            <!-- Insert photo here -->
+                            <img src="https://images.unsplash.com/photo-1642511271386-67d71706ba21?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QWxvY2FzaWElMjBEcmFnb24lMjBTY2FsZXxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Alocasia Dragon Scale">
+                        </div>
+                        <div class="item-info">
+                            <h3>Alocasia Dragon Scale</h3>
+                            <p>Highly textured foliage resembling mythical scales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Plant Care Profiles -->
+        <section id="care" class="section care-profiles-section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Robust Plant Care Profiles</h2>
+                <div class="care-grid">
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></div>
+                        <h3>Lighting Requirements</h3>
+                        <p>Detailed light meters and placement guides to ensure optimal variegation without leaf burn.
+                        </p>
+                    </div>
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+                        <h3>Humidity & Watering</h3>
+                        <p>Custom hydration schedules and relative humidity thresholds for tropical specimens.</p>
+                    </div>
+                    <div class="care-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                        <h3>Pest Diagnostics</h3>
+                        <p>Visual guides to identifying and organically treating common exotic plant ailments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Delivery Quote Form -->
+        <section id="checkout" class="section checkout-section">
+            <div class="container checkout-container">
+                <div class="checkout-content">
+                    <h2 class="section-title">Clean Localized Delivery</h2>
+                    <p>We hand-deliver our most delicate specimens within the tri-state area. Enter your details below
+                        for a specialized delivery quote.</p>
+                </div>
+                <div class="checkout-form-wrapper">
+                    <form class="checkout-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" required placeholder="10001">
+                        </div>
+                        <div class="form-group">
+                            <label for="plant">Specimen of Interest</label>
+                            <select id="plant" required>
+                                <option value="" disabled selected>Select a rare plant</option>
+                                <option value="monstera">Monstera Albo Variegata</option>
+                                <option value="philodendron">Philodendron Pink Princess</option>
+                                <option value="anthurium">Anthurium Warocqueanum</option>
+                                <option value="alocasia">Alocasia Dragon Scale</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Request Delivery Quote</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. Featured Specimen -->
+        <section id="featured" class="section featured-section">
+            <div class="container featured-container">
+                <figure class="featured-image" style="margin: 0;">
+                    <!-- Insert photo here -->
+                    <img src="https://images.unsplash.com/photo-1529420032106-d572717441aa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3Bpcml0dXMlMjBTYW5jdGl8ZW58MHx8MHx8fDA%3D"
+                        alt="Spiritus Sancti" style="width: 100%; height: auto; border-radius: 8px;">
+                    
+                </figure>
+                <div class="featured-content">
+                    <span class="badge">Aroid of the Month</span>
+                    <h2 class="section-title" style="text-align: start; margin-bottom: 1rem;">Philodendron Spiritus
+                        Sancti</h2>
+                    <p>Known as the holy grail of aroids, this incredibly rare species from the state of Espírito Santo
+                        in Brazil is defined by its long, dramatic pendant leaves. A true centerpiece for the elite
+                        collector.</p>
+                    <a href="contact.html" class="btn primary-btn" style="margin-top: 1rem;">Inquire Availability</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials -->
+        <section id="testimonials" class="section testimonials-section bg-secondary">
+            <div class="container">
+                <h2 class="section-title">Collector Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"The variegation on my Monstera Albo is simply unmatched. The plant arrived in
+                            immaculate condition thanks to the white-glove delivery."</p>
+                        <p class="author">- Marcus T., NYC</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Their botanical consulting completely transformed my penthouse. The expertise
+                            of the Rare Flora Boutique team is phenomenal."</p>
+                        <p class="author">- Sarah L., Greenwich</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                        Flora
+                    </a>
+                </div>
+                <p class="footer-description">Curators of the world's most architectural and structural exotic plants. Providing white-glove delivery and bespoke botanical styling.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="12" y2="22"/><path d="M12 12A6 6 0 1 0 6 6v3a3 3 0 0 0 6 0"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="home-2.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-group">
+                <h3>Contact</h3>
+                <ul class="footer-contact-info">
+                    <li><a href="mailto:inquiries@rarefloraboutique.com">inquiries@rarefloraboutique.com</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li>123 Botanical Way<br>Greenwich, CT 06830</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Flora Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

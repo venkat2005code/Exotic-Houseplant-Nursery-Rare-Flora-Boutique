@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Exotic Houseplant Nursery & Rare Flora Boutique</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Leaflet CSS & JS for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="brand-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+                Flora
+            </a>
+        </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="home-2.html">Home 2 (Grid)</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg></span>
+                <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="page-header section bg-secondary">
+            <div class="container">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">We would love to hear from you regarding custom sourcing, botanical consulting,
+                    or general inquiries.</p>
+            </div>
+        </section>
+
+        <!-- 2. Direct Inquiry Form -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Send a Message</h2>
+                <div class="checkout-form-wrapper" style="max-width: 800px; margin: 0 auto;">
+                    <form class="checkout-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="jane@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="" disabled selected>Select an inquiry type</option>
+                                <option value="sourcing">Rare Plant Sourcing</option>
+                                <option value="consulting">Botanical Consulting</option>
+                                <option value="support">Care & Diagnostics Support</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Visit the Greenhouse -->
+        <section class="section bg-secondary">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Visit the Greenhouse</h2>
+                    <p>Our private nursery is open by appointment only for serious collectors and clients.</p>
+                    <div class="info-block">
+                        <h3>Location</h3>
+                        <p>123 Botanical Way<br>Greenwich, CT 06830</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Hours</h3>
+                        <p>Mon - Fri: 10:00 AM - 6:00 PM<br>Sat - Sun: Closed</p>
+                    </div>
+                </div>
+                <div id="greenhouse-map" class="service-image" style="margin: 0; min-height: 400px; border-radius: 8px; z-index: 1;"></div>
+            </div>
+        </section>
+
+        <!-- 4. Consultation Booking -->
+        <section class="section">
+            <div class="container text-center-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Book a Consultation</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">Schedule a 1-on-1 video
+                    call with our lead botanists to discuss your collection, pest issues, or interior styling needs.</p>
+                <div class="calendar-ui-placeholder"
+                    style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 3rem; border-radius: 8px; box-shadow: var(--shadow);">
+                    <h3 style="margin-bottom: 1rem;">Select a Date & Time</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">(Interactive Calendar Integration
+                        Here)</p>
+                    <button class="btn primary-btn">View Available Slots</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FAQ -->
+        <section class="section bg-secondary">
+            <div class="container" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="info-block"
+                        style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <h3>Do you ship internationally?</h3>
+                        <p>Yes, we ship globally with the proper CITES and phytosanitary documentation.</p>
+                    </div>
+                    <div class="info-block"
+                        style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <h3>How do I care for my Monstera Albo?</h3>
+                        <p>Variegated Monsteras need bright, indirect light and a well-draining chunky aroid mix.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Wholesale -->
+        <section class="section">
+            <div class="container text-center-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Wholesale & Partnerships</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">We offer wholesale
+                    pricing for verified botanical retailers and bulk tissue culture orders.</p>
+                <a href="mailto:wholesale@rarefloraboutique.com" class="btn primary-btn">Contact B2B Team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="brand-icon">
+                            <path
+                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                        </svg>
+                        Flora
+                    </a>
+                </div>
+                <p class="footer-description">Curators of the world's most architectural and structural exotic plants.
+                    Providing white-glove delivery and bespoke botanical styling.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg></a>
+                    <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" x2="12" y1="12" y2="22" />
+                            <path d="M12 12A6 6 0 1 0 6 6v3a3 3 0 0 0 6 0" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="home-2.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-group">
+                <h3>Contact</h3>
+                <ul class="footer-contact-info">
+                    <li><a href="mailto:inquiries@rarefloraboutique.com">inquiries@rarefloraboutique.com</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li>123 Botanical Way<br>Greenwich, CT 06830</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Flora Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
