@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Guides | Exotic Houseplant Nursery</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+                Flora
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="home-2.html">Home 2 (Grid)</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="care-guides.html">Care Guides</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+                <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section bg-secondary" style="background: url('https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=2340&auto=format&fit=crop') center/cover no-repeat; min-height: 40vh; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.6);"></div>
+            <div class="container" style="position: relative; z-index: 1; text-align: center; color: white;">
+                <h1 style="font-size: 4rem; margin-bottom: 1rem; font-weight: 300;">Care Guides</h1>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Expert botanical knowledge for your rare plant collection.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                    <!-- Guide 1 -->
+                    <div style="background: var(--card-bg); border-radius: 12px; padding: 3rem; border: 1px solid var(--border-color);">
+                        <div style="margin-bottom: 1.5rem;">
+                            <img src="https://images.unsplash.com/photo-1603120318502-1049f349edb0?w=900&auto=format&fit=crop&q=60" alt="Monstera Albo Care" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Monstera Deliciosa Albo</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Requires high humidity (60%+) and bright, indirect light to maintain white variegation without burning. Use an airy, chunky aroid mix.</p>
+                        <a href="#" class="btn primary-btn">Read Full Guide</a>
+                    </div>
+                    <!-- Guide 2 -->
+                    <div style="background: var(--card-bg); border-radius: 12px; padding: 3rem; border: 1px solid var(--border-color);">
+                        <div style="margin-bottom: 1.5rem;">
+                            <img src="https://plus.unsplash.com/premium_photo-1676654936311-d6cbd23198cc?w=900&auto=format&fit=crop&q=60" alt="Anthurium Warocqueanum Care" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Anthurium Warocqueanum</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Needs consistent moisture but must never sit in water. Sphagnum moss or tree fern fiber works best. Aim for 75%+ humidity.</p>
+                        <a href="#" class="btn primary-btn">Read Full Guide</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-secondary">
+            <div class="container">
+                <h2 class="section-title" style="margin-bottom: 3rem;">Pest Management Basics</h2>
+                <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: var(--card-bg); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+                        <div style="color: var(--accent-color); margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-7.07 17.07l.71-.71A9 9 0 1 1 18.36 5.64l.71-.71A10 10 0 0 0 12 2z"/><path d="M12 6a6 6 0 0 0-4.24 10.24l.71-.71A5 5 0 1 1 15.53 8.47l.71-.71A6 6 0 0 0 12 6z"/><path d="M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--primary-color);">Spider Mites</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Look for fine webbing. Increase humidity and thoroughly wipe down leaves with a diluted neem oil or insecticidal soap solution every 5 days for 3 weeks.</p>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+                        <div style="color: var(--accent-color); margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--primary-color);">Thrips</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Isolate the plant immediately. Use systemic granules in the soil (if not using predatory mites) and a targeted contact spray on the foliage.</p>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+                         <div style="color: var(--accent-color); margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 12a4 4 0 0 0-8 0"/></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--primary-color);">Mealybugs</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Look for white cottony masses. Spot treat immediately with a cotton swab dipped in 70% isopropyl alcohol, checking thoroughly in all stem crevices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                        Flora
+                    </a>
+                </div>
+                <p class="footer-description">Curators of the world's most architectural and structural exotic plants. Providing white-glove delivery and bespoke botanical styling.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="12" y2="22"/><path d="M12 12A6 6 0 1 0 6 6v3a3 3 0 0 0 6 0"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="care-guides.html">Care Guides</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-group">
+                <h3>Contact</h3>
+                <ul class="footer-contact-info">
+                    <li><a href="mailto:inquiries@rarefloraboutique.com">inquiries@rarefloraboutique.com</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li>123 Botanical Way<br>Greenwich, CT 06830</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2024 Exotic Houseplant Nursery & Rare Flora Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

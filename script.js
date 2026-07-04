@@ -79,4 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const marker = L.marker([41.0262, -73.6283]).addTo(greenhouseMap);
         marker.bindPopup(`<b>Rare Flora Boutique</b><br>123 Botanical Way<br>Greenwich, CT 06830`).openPopup();
     }
+    // Nav Bar Active State Logic
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+            const dropdown = link.closest('.dropdown');
+            if (dropdown) {
+                const dropbtn = dropdown.querySelector('.dropbtn');
+                if (dropbtn) dropbtn.classList.add('active');
+            }
+        }
+    });
 });
