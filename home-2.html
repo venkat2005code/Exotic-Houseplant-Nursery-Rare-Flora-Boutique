@@ -15,17 +15,15 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
-                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-                </svg>
-                Flora
+                <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+                <span class="logo-text">Flora Boutique</span>
             </a>
         </div>
                 <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -52,9 +50,11 @@
         <div class="controls">
             <button id="dir-toggle" class="control-btn" aria-label="Toggle Direction">LTR</button>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
-                    <span class="icon light-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
-                    <span class="icon dark-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
-                </button>
+                <span class="icon light-icon"><i class="fa-solid fa-moon"></i></span>
+                <span class="icon dark-icon"><i class="fa-solid fa-sun"></i></span>
+            </button>
+            <a href="login.html" class="control-btn" style="text-decoration: none;">Login</a>
+            <a href="signup.html" class="btn primary-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; text-decoration: none;">Sign Up</a>
         </div>
     </header>
 
@@ -191,11 +191,8 @@
             <div class="footer-brand">
                 <div class="footer-logo">
                     <a href="index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
-                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-                        </svg>
-                        Flora
+                        <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+                        <span class="logo-text">Flora Boutique</span>
                     </a>
                 </div>
                 <p class="footer-description">Curators of the world's most architectural and structural exotic plants. Providing white-glove delivery and bespoke botanical styling.</p>

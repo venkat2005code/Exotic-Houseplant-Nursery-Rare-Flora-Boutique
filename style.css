@@ -71,9 +71,15 @@ a {
     align-items: center;
     gap: 0.8rem;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.5px;
     color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.logo-icon, .brand-icon {
+    color: var(--accent-color);
+    font-size: 1.2em;
 }
 
 .brand-logo {
@@ -165,31 +171,35 @@ a {
     gap: 1rem;
 }
 
-.control-btn {
+.control-btn, .icon-btn {
     background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s ease;
-}
-
-.control-btn:hover {
-    background-color: var(--bg-secondary);
-}
-
-.theme-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.control-btn {
+    padding: 0.5rem 1rem;
+}
+
+.icon-btn {
     padding: 0.5rem;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.control-btn:hover, .icon-btn:hover {
+    background-color: var(--bg-secondary);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* Theme Icon logic */
@@ -1216,5 +1226,218 @@ a {
     /* 6. Footer layout adjustments */
     .footer {
         padding: 3rem 5% 1.5rem;
+    }
+}
+
+/* Fix for 360px mobile hamburger jump and sticky issues */
+.header {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.25rem;
+    }
+    .hamburger {
+        align-self: center;
+    }
+}
+
+/* ---- AUTHENTICATION PAGES (Login & Sign Up) ---- */
+
+.auth-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.auth-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+[data-theme="dark"] .auth-page::before {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.auth-toggles {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.auth-toggle-btn {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.auth-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: white;
+    color: white;
+}
+
+[data-theme="dark"] .auth-toggle-btn {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-panel {
+    position: relative;
+    z-index: 2;
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 450px;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .auth-panel {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.auth-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.auth-header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.auth-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.auth-options a {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.auth-options a:hover {
+    text-decoration: underline;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .auth-btn {
+    color: var(--bg-primary);
+}
+
+.auth-btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Login Specifics */
+.social-login .btn-outline-dark {
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.social-login .btn-outline-dark:hover {
+    background: var(--bg-secondary);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .auth-panel {
+        padding: 2rem 1.5rem;
+    }
+    .auth-page {
+        padding: 1rem;
     }
 }

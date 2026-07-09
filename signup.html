@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Exotic Houseplant Nursery</title>
+    <meta name="description" content="Create a new account at Rare Flora Boutique.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Full-screen Auth Layout -->
+    <div class="auth-page" style="background-image: url('signup_bg.png');">
+        
+        <!-- Action Toggles -->
+        <div class="auth-toggles">
+            <button id="theme-toggle" class="icon-btn auth-toggle-btn" aria-label="Toggle dark mode">
+                <span class="icon light-icon"><i class="fa-solid fa-moon"></i></span>
+                <span class="icon dark-icon"><i class="fa-solid fa-sun"></i></span>
+            </button>
+            <button id="dir-toggle" class="control-btn auth-toggle-btn" aria-label="Toggle Direction">LTR</button>
+        </div>
+        
+        <!-- Glassmorphic Panel -->
+        <div class="auth-panel">
+
+            <a href="index.html" class="auth-logo">
+                <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+                <span class="logo-text">Flora Boutique</span>
+            </a>
+            
+            <div class="auth-header">
+                <h2>Join the Nursery</h2>
+                <p>Register today to get early access to rare drops.</p>
+            </div>
+
+            <form class="auth-form" action="index.html" method="GET">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Monstera Lover" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-color); background-color: var(--bg-primary); color: var(--text-primary); border-radius: 4px; font-family: 'Inter', sans-serif;">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="botanist@example.com" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-color); background-color: var(--bg-primary); color: var(--text-primary); border-radius: 4px; font-family: 'Inter', sans-serif;">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" required style="width: 100%; padding: 1rem; border: 1px solid var(--border-color); background-color: var(--bg-primary); color: var(--text-primary); border-radius: 4px; font-family: 'Inter', sans-serif;">
+                </div>
+
+                <div class="auth-options" style="justify-content: flex-start;">
+                    <label>
+                        <input type="checkbox" style="accent-color: var(--accent-color);" required> 
+                        I agree to the <a href="#" style="margin-left: 0.3rem;">Terms of Service</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+
+            <div class="social-login" style="text-align: center; margin-top: 1.5rem;">
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Or continue with</p>
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <button type="button" class="btn btn-outline-dark" style="flex: 1; padding: 0.5rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary);"><i class="fa-brands fa-google" style="color: #ea4335;"></i></button>
+                    <button type="button" class="btn btn-outline-dark" style="flex: 1; padding: 0.5rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary);"><i class="fa-brands fa-apple"></i></button>
+                    <button type="button" class="btn btn-outline-dark" style="flex: 1; padding: 0.5rem; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary);"><i class="fa-brands fa-facebook-f" style="color: #1877f2;"></i></button>
+                </div>
+            </div>
+
+            <div class="auth-footer">
+                <p>Already an explorer? <a href="login.html">Return to login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script initialization -->
+    <script src="script.js"></script>
+</body>
+</html>
